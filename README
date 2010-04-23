@@ -1,0 +1,5 @@
+James - Javascript Server Pages
+===============================
+James is partly inspired by classic ASP. It uses jack by Tim Robinson and the Jimmel markup language.
+
+The idea is that the code that executes for each page corresponds to one file on the filesystem, much like the php/classic ASP model.
