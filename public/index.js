@@ -3,7 +3,10 @@ layout('Hello World!',
     p('This. Oh this. This is James, my friend!'),
     p('The time is now: ' + new Date()),
     p('Go to my ', a({href: '/page2'}, 'other page.')),
-    p('PATH_INFO: ' + PATH_INFO),
-    p('SERVER_NAME: ' + SERVER_NAME),
+    ul(
+        keys(params).map(function(param){
+            return li(param, ' : ', params[param])
+        })
+    ),
     button({onclick: 'onClick()'}, 'Click me!')
 )

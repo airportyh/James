@@ -1,3 +1,10 @@
+function keys(obj){
+    var ret = []
+    for (var key in obj)
+        ret.push(key)
+    return ret
+}
+
 function onClick(){
     alert('You clicked me!')
 }

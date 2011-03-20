@@ -1,3 +1,7 @@
+var Jack = require('jack')
+
+Jack.Response.redirect('http://www.google.com/')
+
 layout('Page 2',
     h1('Welcome to Page 2!'),
     p('Hello! This is page 2!'),
